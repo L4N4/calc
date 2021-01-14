@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <h1>Calculadora</h1>
+    <!-- diseño de columnas usando grid -->
+    <div class="columnas">
+        <div></div>
+        <!-- contenedor de la calculadora -->
+        <div class="contenedor">
+            <form action="#" name="calc" id="calculadora">
+                <!-- pantalla para visualizar números, operaciones y resultados -->
+                <p id="campo">0</p>
+                <br>
+                <div class="erase">
+                    <input type="button" value="⌫" class="btn clean" onclick="retro()">
+                    <input type="button" value="C" class="btn clean" onclick="borradoParcial()">
+                    <input type="button" value="CE" class="btn clean" onclick="borradoTotal()">
+                </div>
+                <div class="grilla">
+                    <!-- Botones de la calculadora -->
+
+                    <input type="button" value="7" class="btn" onclick="numero('7')" />
+                    <input type="button" value="8" class="btn" onclick="numero('8')" />
+                    <input type="button" value="9" class="btn" onclick="numero('9')" />
+                    <input type="button" value="/" class="btn op" onclick="operar('/')" />
+                    <input type="button" value="√" class="btn op" onclick="raizc()" />
+                    <input type="button" value="4" class="btn" onclick="numero('4')" />
+                    <input type="button" value="5" class="btn" onclick="numero('5')" />
+                    <input type="button" value="6" class="btn" onclick="numero('6')" />
+                    <input type="button" value="*" class="btn op" onclick="operar('*')" />
+                    <input type="button" value="%" class="btn op" onclick="porcent()" />
+                    <input type="button" value="1" class="btn" onclick="numero('1')" />
+                    <input type="button" value="2" class="btn" onclick="numero('2')" />
+                    <input type="button" value="3" class="btn" onclick="numero('3')" />
+                    <input type="button" value="-" class="btn op" onclick="operar('-')" />
+                    <input type="button" value="0" class="btn cero" onclick="numero('0')" />
+                    <input type="button" value="." class="btn" onclick="numero('.')" />
+                    <input type="button" value="x^2" class="btn op" onclick="expo()" />
+                    <input type="button" value="+" class="btn op" onclick="operar('+')" />
+                    <input type="button" value="π" class="btn op" onclick="pi()" />
+                    <input type="button" value="=" class="btn result" onclick="igualar()" />
+                </div>
+            </form>
+        </div>
+        <div></div>
+    </div>
+    <footer>
+        <div class="pie">
+            <input type="button" value="abrir calculadora en otra ventana" onclick="open('miniCalc.html','calculadora', 'width=360,height=472,toolbar=no, statusbar=no,menubar=no,titlebar=no')" />
+           <br><br>
+            Recursos e información <a href="https://aprende-web.net/jspracticas/calculadora/calculadora2.php"
+                target="blank">aquí</a>
+            <br><br>
+            Copyright © 2021 Natalia y Juan David. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+
+<!-- <script src="index.js"></script> -->
+<script src="calcFunctions.js"></script>
+
+</html>
