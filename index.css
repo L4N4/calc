@@ -1,6 +1,5 @@
 body{
-
-  background-image: url('https://img.freepik.com/foto-gratis/marco-equipo-oficina-escritorio-blanco_1357-235.jpg?size=626&ext=jpg');
+  background-image: url('https://st4.depositphotos.com/3269799/24725/v/1600/depositphotos_247251264-stock-illustration-abstract-background-technology-blue-tech.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -9,12 +8,14 @@ body{
 /* Encabezado */
 /* ---------- */
 h1{
-    text-align: center;
+    background-color: #dfdcdcd0;
+    padding: 20px;
+    text-align-last: center;
     position: relative;
-    top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #00549d;
     font-size: 45px;
+    text-shadow: 1px 1px #000000;
 }
 
 /* ----------------- */
@@ -32,12 +33,10 @@ h1{
     width:340px;
     height:auto;
     position: relative;
-    top: 45px;
     background-color:rgb(78, 77, 77);
     border-radius:10px;
     box-shadow: 3px 3px #3a3939;
-    justify-self: center
-
+    justify-self: center;
 }
 /* pantalla de la calculadora */
 p#campo{
@@ -95,8 +94,7 @@ p#campo{
 }
 .result{
     height: auto;
-    grid-column: 5;
-    grid-row: 3 / span 2;
+    grid-column: span 2;
     background-color: rgb(48, 132, 228);
 }
 .result:hover{
@@ -117,12 +115,32 @@ p#campo{
     border: none;
 }
 
+div.info {
+    position:relative;
+    height:60px;
+    border: none;
+    border-radius: 50px;
+    margin: 1px;
+    grid-column: span 3;
+    background-color: #b0cbdd;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+div.info a{
+    font-family:Impact,Charcoal,sans-serif;
+    font-size:18px;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
 /* ------ */
 /* footer */
 /* ------ */
 .pie {
     position: relative;
-    top: 100px;
+    top: 30px;
     background-color: #dfdcdcd0;
     padding: 20px;
     text-align-last: center;
